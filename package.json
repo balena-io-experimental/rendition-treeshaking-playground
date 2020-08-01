@@ -1,0 +1,31 @@
+{
+  "name": "rendition-treeshaking-playground",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Playground for testing treeshaking of rendition",
+  "homepage": "https://github.com/balena-io-playground/rendition-treeshaking-playground#readme",
+  "main": "dist/index.js",
+  "keywords": [
+    "rendition",
+    "treeshaking",
+    "playground"
+  ],
+  "author": "Thodoris Greasidis <thodoris@balena.io>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balena-io-playground/rendition-treeshaking-playground.git"
+  },
+  "bugs": {
+    "url": "https://github.com/balena-io-playground/rendition-treeshaking-playground/issues"
+  },
+  "scripts": {
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "@balena/lint": "^5.0.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.7",
+    "rimraf": "^3.0.2"
+  }
+}
