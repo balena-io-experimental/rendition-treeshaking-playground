@@ -3,7 +3,7 @@ var root = path.resolve(__dirname, '.');
 
 var config = {
 	mode: 'production',
-	entry: path.join(root, 'src/index.js'),
+	entry: path.join(root, 'src/index.ts'),
 	output: {
 		// Include comments about the contained modules
 		pathinfo: true,
@@ -37,7 +37,19 @@ var config = {
 		usedExports: true,
 	},
 	resolve: {
-		extensions: ['.js', '.ts']
+		extensions: ['.js', '.ts', '.tsx']
+	},
+	module: {
+		rules: [
+			{
+				test: /\.tsx?$/,
+				use: 'ts-loader',
+			},
+			{
+				test: /\.css$/,
+				use: ['style-loader', 'css-loader'],
+			},
+		],
 	},
 	plugins: [
 		new (require('webpack-bundle-analyzer').BundleAnalyzerPlugin)({
