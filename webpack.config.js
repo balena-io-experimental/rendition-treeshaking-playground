@@ -19,8 +19,8 @@ var config = {
 		]
 	},
 	optimization: {
-		// Keep readable debug comments in the build output
-		minimize: false,
+		// Disable to preserve the readable debug comments in the build output
+		minimize: true,
 		// Preserve each individual dependency in the analyzer & the build output
 		concatenateModules: false,
 
