@@ -10,14 +10,6 @@ var config = {
 		filename: 'index.js',
 		path: path.join(root, 'dist')
 	},
-	module: {
-		rules: [
-			{
-				test: /\.css$/,
-				use: ['style-loader', 'css-loader']
-			}
-		]
-	},
 	optimization: {
 		// Disable to preserve the readable debug comments in the build output
 		minimize: true,
@@ -43,7 +35,10 @@ var config = {
 		rules: [
 			{
 				test: /\.tsx?$/,
-				use: 'ts-loader',
+				use: [
+					'babel-loader',
+					'ts-loader',
+				]
 			},
 			{
 				test: /\.css$/,

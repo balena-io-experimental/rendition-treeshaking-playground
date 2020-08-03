@@ -36,7 +36,10 @@
     "rendition": "^16.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
     "@balena/lint": "^5.0.4",
+    "babel-loader": "^8.1.0",
     "css-loader": "^4.2.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.7",
