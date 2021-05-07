@@ -33,7 +33,7 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "rendition": "^19.3.2"
+    "rendition": "^20.12.2"
   },
   "devDependencies": {
     "@babel/core": "^7.11.0",
